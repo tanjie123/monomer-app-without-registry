@@ -1,0 +1,14 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: monolithicappwithoutregistry
+  namespace: default
+spec:
+  rules:
+  - host: myjhipster.com
+    http:
+      paths:
+      - path: /monolithicappwithoutregistry/.*
+        backend:
+          serviceName: monolithicappwithoutregistry
+          servicePort: 8080

@@ -30,6 +30,16 @@
         "entitySuffix": "",
         "dtoSuffix": "DTO",
         "otherModules": [],
-        "enableTranslation": false
+        "enableTranslation": false,
+        "appsFolders": ["monomer-app-without-registry"],
+        "directoryPath": "../",
+        "dockerRepositoryName": "tanjie123",
+        "dockerPushCommand": "docker push",
+        "kubernetesNamespace": "default",
+        "kubernetesServiceType": "Ingress",
+        "monitoring": "prometheus",
+        "istio": "no",
+        "istioRoute": false,
+        "ingressDomain": "myjhipster.com"
     }
 }
